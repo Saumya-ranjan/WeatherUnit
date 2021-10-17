@@ -1,0 +1,108 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+}
+
+header {
+    background-color: #1E272E;
+    min-height: 80px;
+    display: flex;
+}
+
+main {
+    width: 90%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: auto;
+    font-size: 4em;
+    font-family: "Andale Mono";
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+img {
+    transform: scale(1.5);
+}
+
+.weather-panel {
+
+    text-align: center;
+    flex-basis: 100%;
+    border: 1px solid black;
+    font-family: Helvetica;
+
+    animation: change 10s infinite;
+
+
+}
+
+@keyframes change {
+    0% {
+        background-color: #81d9ec;
+    }
+
+    25% {
+        background-color: #abdde0;
+    }
+
+    50% {
+        background-color: #c6ebeb;
+    }
+
+    75% {
+        background-color: #8ad0da;
+    }
+
+    100% {
+        background-color: #86d7da;
+    }
+
+}
+
+.btn {
+    margin-bottom: 10px;
+    height: 43px;
+    width: 80px;
+    margin-left: 5px;
+}
+
+input {
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-top: 3px;
+    font-size: 2em;
+    box-sizing: border-box;
+    border: none;
+    padding: .2em;
+    border: 2px solid lightgrey;
+    width: calc(100% - 117.2px);
+
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    section {
+        display: block;
+    }
+
+    .extra-info {
+        display: none;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    {{>headerLinks}}
+
+    </head>
+<body>
+
+    {{>navbar}}
+
+    
+    <div class="container-fluid main_header">
+      <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row">
+            <div class="col-md-6 col-12 main_header_right align-items-center">
+                <figure>
+                    {{!-- <img src="images/abouts.jpg" alt="sam" class="img-fluid" title="Flood Unit" > --}}
+
+                    <video width="450" height="550" autoplay>
+                     <source src="images/weather.mp4" type="video/mp4">
+                      {{!-- Your browser does not support the video tag. --}}
+                    </video>
+                </figure>
+    
+              </div>
+       
+         <div class="col-md-6 col-12 main_header_left" >
+            <p>Reports Site</p>
+          <div style="border:1px black solid">
+          <h1>Forecasting of<span class="text_clr"> India Weather</span> </h1>
+            
+            <Button class='btn btn-dark' ><a href="https://internal.imd.gov.in/section/nhac/dynamic/allindianew.pdf">Weather Reports</a></Button>
+            
+         </div>
+            
+         <div>
+            <h1>Forecasting of<span class="text_clr"> India flood</span> via dates</h1>
+            
+                <form action="/report" method="POST">
+            <div class="form-group"style="margin-bottom:15px">
+              <label for="date">Enter Date to see Forecast of:</label>
+              <input style="padding:15px" type="date" class="form-control" name="date">
+            </div>
+            <button type="submit" class="btn btn-dark">SUBMIT</button>
+          </form>
+          </div>
+            
+          </div>
+          
+          
+        </div>
+        </div>
+        </div>
+        </div>
+
+        
+      <div >{{>footer}} </div>
+        
+
+
+</body>
+
+</html>

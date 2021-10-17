@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>headerLinks}}
+    <meta charset="UTF-8">
+    <title>Weather-Unit</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- stylesheets -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+    <div class="container-fluid main_menu">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <nav class="navbar navbar-expand-lg ">
+                    <a class="navbar-brand" href="/">
+                        <h3>
+                            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop"
+                                colors="primary:#7166ee,secondary:#66eece" stroke="53" style="width:40px;height:45px;">
+                            </lord-icon>
+                        
+                            <b style="color:white;">Weather-unit</b>
+                        
+                            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/gqzfzudq.json" trigger="loop"
+                                colors="primary:#625bcd,secondary:#08a88a" style="width:40px;height:45px">
+                            </lord-icon>
+                        </h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/weather">Weather</a>
+                            </li>
+
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="/map">Map</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="/report">Reports</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="/prediction">Prediction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="/logout">Logout</a>
+                            </li>
+    
+    
+                        </ul>
+    
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    {{!-- {{>navbar}} --}}
+    {{!-- <header>
+    
+        <h1><script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <lord-icon class="lorder" src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop" colors="primary:#7166ee,secondary:#66eece"
+            stroke="53" style="width:80px;height:80px;" >
+        </lord-icon>
+
+          <b style="color:white;">Weather-unit</b>
+
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+        <lord-icon class="lorders" src="https://cdn.lordicon.com/gqzfzudq.json" trigger="loop" colors="primary:#625bcd,secondary:#08a88a"
+            style="width:70px;height:80px">
+        </lord-icon>
+        </h1>
+    </header> --}}
+    <main>
+        <input id="search"  type="text" autocomplete="off" placeholder="Enter location">
+        <button id="search-btn" class="btn btn-dark"><strong>Search</strong></button>
+        <section id="weather-panels" class="weather-panels"></section>
+        <div id="map"></div>
+    </main>
+    <!-- scripts -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js'></script>
+    <script src="js/mapbox-geocode-utils.js"></script>
+    <script src="js/keys.js"></script>
+    <script src="js/mains.js"></script>
+    {{>footer}}
+</body>
+</html>
