@@ -1,6 +1,7 @@
 # WeatherUnit
-Website made with NODE.JS, HTML, CSS, HBS TEMPLATE AND MONGO DB and for prediction part it goes with python(flask).
 
+Website made with NODE.JS, HTML, CSS, HBS TEMPLATE AND MONGO DB and for prediction part it goes with python(flask).
+--------------------------------------------------------------------------------------------------------------------------------
 # Home Page
 ![Alt text](/Screenshots/weather-app4.PNG?raw=true "Optional Title")
 
@@ -13,7 +14,7 @@ Website made with NODE.JS, HTML, CSS, HBS TEMPLATE AND MONGO DB and for predicti
 # Weather Pdf format forecast of 5 days from present day 
 ![Alt text](/Screenshots/weather-app6.PNG?raw=true "Optional Title")
 
-#
+# Weather page (API from openweathermap.org)
 ![Alt text](/Screenshots/weather-app5.PNG?raw=true "Optional Title")
 
 
