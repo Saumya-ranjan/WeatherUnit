@@ -1,12 +1,12 @@
 {
-  "name": "expressweb",
+  "name": "weatherunit",
   "version": "1.0.0",
   "description": "<div align=\"center\">\r   <h1>Weather-App</h1>",
   "main": "index.js",
   "scripts": {
     "start": "node src/app.js"
   },
-  "author": "Amulya",
+  "author": "Saumyaranjan",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
