@@ -27,13 +27,4 @@
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "requests": "^0.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Amulya-coder/Weather-App.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Amulya-coder/Weather-App/issues"
-  },
-  "homepage": "https://github.com/Amulya-coder/Weather-App#readme"
-}
+  }}
